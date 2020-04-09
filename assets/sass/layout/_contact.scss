@@ -1,0 +1,70 @@
+
+.contact {
+    background-color: $cool-purple;
+    color: $white;
+    padding: 5% 8% 5% 8%;
+    display: flex;
+    align-content: space-around;
+
+    &__logo {
+        margin-left: 10%;
+    }
+
+    &__mail {
+        margin-left: 10%;
+
+        &--mail {
+            margin-bottom: 5%;
+        }
+
+        &--phone {
+            margin-bottom: 5%;
+        }
+
+    }
+
+    &__social-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 10%;
+    }
+
+    &__item {
+        color: $white;
+        width: 50px;
+    }
+
+    &__bottom {
+        background-color: $smoky-black;
+        color: white;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-weight: $black;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        &__logo {
+            margin-bottom: 8%;
+        }
+        &__mail {
+
+            &--phone {
+                margin-bottom: 8%;
+            }
+        }
+        &__bottom{
+            font-size: small;
+        }
+    }
+}
+
